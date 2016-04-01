@@ -25,6 +25,11 @@
       margin: 18px 0;
       padding: 0;
     }
+    amp-ad[type="aduptech"] {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+    }
   </style>
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -76,6 +81,37 @@
   <amp-ad width=300 height=250
       type="adtech"
       src="https://adserver.adtechus.com/addyn/3.0/5280.1/2274008/0/-1/ADTECH;size=300x250;key=plumber;alias=careerbear-ros-middle1;loc=300;;target=_blank;grp=27980912;misc=3767074">
+  </amp-ad>
+
+  <h2>Ad Up Technology</h2>
+
+  <h4>Fixed size</h4>
+  <amp-ad type="aduptech"
+      layout="fixed"
+      width="500"
+      height="200"
+      data-placementkey="ae7906d535ce47fbb29fc5f45ef910b4"
+      data-query="reisen;mallorca;spanien"
+      data-adtest="1">
+  </amp-ad>
+
+  <h4>Filled size (based on parent html container)</h4>
+  <div style="width:350px;height:300px;position:relative">
+    <amp-ad type="aduptech"
+        layout="fill"
+        data-placementkey="ae7906d535ce47fbb29fc5f45ef910b4"
+        data-query="reisen;mallorca;spanien"
+        data-adtest="1">
+    </amp-ad>
+  </div>
+
+  <h4>Fixed height (100% width)</h4>
+  <amp-ad type="aduptech"
+      layout="fixed-height"
+      height="100"
+      data-placementkey="ae7906d535ce47fbb29fc5f45ef910b4"
+      data-query="reisen;mallorca;spanien"
+      data-adtest="1">
   </amp-ad>
 
   <h2>Teads</h2>
